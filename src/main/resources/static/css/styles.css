@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body { font-family: Arial, sans-serif; margin: 20px; }
+nav a { margin-right: 10px; }
+table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+th, td { border: 1px solid #ccc; padding: 8px; vertical-align: middle; }
+img { display: block; }
+button { padding: 6px 10px; }
+form { margin: 10px 0; }

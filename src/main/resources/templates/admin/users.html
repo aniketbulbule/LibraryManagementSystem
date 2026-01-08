@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="layout :: content">
+<body>
+  <h2>Users</h2>
+  <table>
+    <tr><th>Username</th><th>Name</th><th>Email</th><th>Enabled</th><th>Roles</th></tr>
+    <tr th:each="u : ${users}">
+      <td th:text="${u.username}"></td>
+      <td th:text="${u.fullName}"></td>
+      <td th:text="${u.email}"></td>
+      <td th:text="${u.enabled}"></td>
+      <td>
+        <span th:each="r : ${u.roles}" th:text="${r.name}"></span>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
